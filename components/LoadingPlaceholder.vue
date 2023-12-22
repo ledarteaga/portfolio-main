@@ -1,6 +1,6 @@
 <template>
-    <div
-        class="h-52  text-center relative  text-md  font-bold flex items-center justify-center after:h-full after:w-full after:bg-black after:opacity-10 after:absolute">
-        Cargando...
-    </div>
+    <Vue3Marquee :duration="120">
+        <USkeleton class="h-52 w-60 mx-6" v-for="slide in 10" :key="slide" />
+
+    </Vue3Marquee>
 </template>
