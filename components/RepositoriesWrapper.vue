@@ -10,7 +10,12 @@
     <p class="text-2xl font-bold ml-16 px-24 mb-8">
       Mis proyectos
     </p>
-    <Carousel :items-to-show="4" :autoplay="5000" :wrap-around="true">
+    <Vue3Marquee :duration="120" >
+      <RepositoryCard class=" mx-10" v-for="slide in repos" :key="slide.id" :repo="slide" />
+
+  </Vue3Marquee>
+
+    <!-- <Carousel :items-to-show="4" :autoplay="5000" :wrap-around="true">
       <Slide v-for="slide in repos" :key="slide.id">
         <RepositoryCard :repo="slide" />
       </Slide>
@@ -18,7 +23,7 @@
       <template #addons>
         <Pagination />
       </template>
-    </Carousel>
+    </Carousel> -->
   </div>
 </template>
 

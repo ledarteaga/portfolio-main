@@ -14,6 +14,9 @@ dependencies:
   vue3-carousel:
     specifier: ^0.3.1
     version: 0.3.1(vue@3.3.12)
+  vue3-marquee:
+    specifier: ^4.1.0
+    version: 4.1.0(vue@3.3.12)
 
 devDependencies:
   '@nuxt/devtools':
@@ -1576,6 +1579,7 @@ packages:
       detect-libc: 1.0.3
       is-glob: 4.0.3
       micromatch: 4.0.5
+      napi-wasm: 1.1.0
       node-addon-api: 7.0.0
     optionalDependencies:
       '@parcel/watcher-android-arm64': 2.3.0
@@ -1590,6 +1594,8 @@ packages:
       '@parcel/watcher-win32-arm64': 2.3.0
       '@parcel/watcher-win32-ia32': 2.3.0
       '@parcel/watcher-win32-x64': 2.3.0
+    bundledDependencies:
+      - napi-wasm
 
   /@pkgjs/parseargs@0.11.0:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -8315,6 +8321,15 @@ packages:
     resolution: {integrity: sha512-86vUkNPBzL2PVuR9w6hUsI90ccFjLp+K8cSFpRTISf+SjUQY3fMHc5CFF5MUL62v1xYYm27zEBmQupO9VQx9Kw==}
     peerDependencies:
       vue: ^3.2.0
+    dependencies:
+      vue: 3.3.12(typescript@5.3.3)
+    dev: false
+
+  /vue3-marquee@4.1.0(vue@3.3.12):
+    resolution: {integrity: sha512-AkvpNC6+7CwvIBgiAr8qMs1XvhGhfSS2ahlMEp80YXAmDOP8nDdn/smQ6eWtusf+hLX21yTaSOoKGcill4bCRg==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      vue: ^3.2
     dependencies:
       vue: 3.3.12(typescript@5.3.3)
     dev: false
