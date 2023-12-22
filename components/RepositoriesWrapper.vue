@@ -14,6 +14,7 @@
 import type { iRepoDetails } from '~/types';
 import LoadingPlaceholder from './LoadingPlaceholder.vue'
 
+
 const repos = ref<iRepoDetails[]>([])
 
 const config = useRuntimeConfig();
@@ -25,7 +26,6 @@ const { pending, error } = useFetch('/users/ledarteaga/repos', {
   baseURL: config.public.baseURL,
   onResponse({ request, response, options }) {
     repos.value = response._data.map((e: any) => e as iRepoDetails)
-    // Process the response data
   },
 },);
 </script>
