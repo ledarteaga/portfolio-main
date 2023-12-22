@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center font-bold mt-6 mb-3">
+  <div class="flex justify-center font-bold   h-24 items-center">
     Made with ❤️ by ledarteaga
   </div>
 </template>

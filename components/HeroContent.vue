@@ -1,20 +1,20 @@
 <template>
-  <section class="flex flex-col justify-center  h-[80vh] mx-16  relative  mb-10">
+  <section class="flex flex-col justify-center  h-[80vh] mx-0  md:mx-16  relative  mb-10">
     <div class=" mx-24  flex-col flex gap-4   justify-center">
-      <p class=" text-6xl font-bold">
+      <p class=" text-4xl md:text-6xl font-bold text-center md:text-start">
         Luis Arteaga
       </p>
-      <p class="text-md font-semibold capitalize">
+      <p class=" text-md font-semibold capitalize text-center md:text-start">
         Desarrollador front end
       </p>
-      <div class="flex gap-3 ">
+      <div class="flex gap-3  justify-center md:justify-start">
         <Icon size="25" name="devicon:typescript" color="black" />
         <Icon size="25" name="logos:vue" color="black" />
         <Icon size="25" name="logos:flutter" color="black" />
         <Icon size="25" name="logos:nuxt-icon" color="black" />
       </div>
     </div>
-    <div class="flex justify-end gap-5 absolute bottom-0 w-full">
+    <div class="flex justify-center md:justify-end gap-5 absolute bottom-0 w-full">
       <UTooltip text="Github">
         <a
           href="https://github.com/ledarteaga

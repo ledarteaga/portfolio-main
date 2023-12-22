@@ -8,5 +8,8 @@
   "prettier.singleQuote": true,
   "prettier.vueIndentScriptAndStyle": true,
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
   }
 
