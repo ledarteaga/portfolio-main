@@ -7,26 +7,8 @@
       <p class=" text-md font-semibold capitalize text-center md:text-start">
         Desarrollador front end
       </p>
-      <div class="flex gap-3  justify-center md:justify-start">
-        <Icon size="25" name="devicon:typescript" color="black" />
-        <Icon size="25" name="logos:vue" color="black" />
-        <Icon size="25" name="logos:flutter" color="black" />
-        <Icon size="25" name="logos:nuxt-icon" color="black" />
-      </div>
+      <StackIcons />
     </div>
-    <div class="flex justify-center md:justify-end gap-5 absolute bottom-0 w-full">
-      <UTooltip text="Github">
-        <a href="https://github.com/ledarteaga
-        " target="_blank">
-          <Icon size="25" name="mdi:github" color="white" />
-        </a>
-      </UTooltip>
-      <UTooltip text="LinkedIn">
-        <a href="https://linkedin.com/in/luis-a-90a5a4193
-        " target="_blank">
-          <Icon size="25" name="mdi:linkedin" color="white" />
-        </a>
-      </UTooltip>
-    </div>
+    <SocialIcons />
   </section>
 </template>
