@@ -1,17 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/eslint-module"],
+  modules: ['@nuxtjs/eslint-module', '@nuxt/ui', 'dayjs-nuxt', 'nuxt-icon'],
+  ssr: false,
   eslint: {
     lintOnStart: false,
   },
+
   runtimeConfig: {
     public: {
-      baseURL: process.env.BASE_URL || "",
+      baseURL: process.env.BASE_URL || '',
+      token: process.env.GH_TOKEN || '',
     },
-  },
-  publicRuntimeConfig: {
-    baseUrl: process.env.BASE_URL,
-    token: process.env.TOKEN,
   },
 });

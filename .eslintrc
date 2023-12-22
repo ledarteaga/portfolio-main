@@ -1,8 +1,16 @@
 {
-    "extends": ["@nuxtjs/eslint-config", "@nuxtjs/eslint-config-typescript", "plugin:prettier/recommended"],
+    "extends": ["@nuxtjs/eslint-config"],
     "rules":{
       "no-undef":"off",
-      "quotes":"off"
+      "comma-dangle":"off",
+      "indent":"off",
+      "semi":"off"
+      
     },
-    "parser": "vue-eslint-parser"
+
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "parser": "@typescript-eslint/parser"
+  }
+
   }

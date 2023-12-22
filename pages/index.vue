@@ -1,3 +1,7 @@
 <template>
-  <div>esto es una prueba</div>
+  <div>
+    <HeroContent />
+    <RepositoriesWrapper />
+    <FooterContent />
+  </div>
 </template>

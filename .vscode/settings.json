@@ -1,8 +1,12 @@
 {
-    "eslint.format.enable": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-      },
-      "editor.formatOnSave": true,
-      "prettier.useEditorConfig": true
-    }
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "editor.formatOnSave": true,
+  "prettier.trailingComma": "all",
+  "prettier.singleQuote": true,
+  "prettier.vueIndentScriptAndStyle": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  }
+
