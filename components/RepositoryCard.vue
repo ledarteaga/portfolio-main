@@ -1,10 +1,7 @@
 <template>
-  <a
-    :href="repo.html_url
-    "
-    target="_blank"
-  >
-    <UCard class=" w-72 h-full h-52">
+  <a :href="repo.html_url
+    " target="_blank">
+    <UCard class=" w-72 h-full h-40 md:h-52">
       <template #header>
         <p class="capitalize font-bold">
           {{ repo.name }}
@@ -25,15 +22,16 @@
           </p>
         </div>
       </template>
-    </UCard></a>
+    </UCard>
+  </a>
 </template>
 
 <script setup lang="ts">
 import type { iRepoDetails } from '~/types';
 
-    interface Props {
-        repo: iRepoDetails
-    }
+interface Props {
+  repo: iRepoDetails
+}
 
-    defineProps<Props>()
+defineProps<Props>()
 </script>
