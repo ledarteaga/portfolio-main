@@ -4,7 +4,8 @@
       "no-undef":"off",
       "comma-dangle":"off",
       "indent":"off",
-      "semi":"off"
+      "semi":"off",
+      "no-unused-vars":"warn"
       
     },
 

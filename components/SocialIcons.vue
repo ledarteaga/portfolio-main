@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center md:justify-end gap-5 absolute bottom-0 w-full">
+    <div class="flex justify-end gap-5 absolute top-0 right-5  md:bottom-0 w-full">
         <UTooltip text="Github">
             <a href="https://github.com/ledarteaga
         " target="_blank">
