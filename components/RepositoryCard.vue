@@ -1,7 +1,7 @@
 <template>
   <a :href="repo.html_url" target="_blank">
     <div
-      class="flex flex-col w-72  h-52 md:h-52 rounded-md bg-gray-800 shadow px-3 py-2 transition-all border-gray-800 border hover:border-green-400">
+      class="flex flex-col w-72 h-48  md:h-52 rounded-md bg-gray-800 shadow px-3 py-2 transition-all border-gray-800 border hover:border-green-400">
 
       <div>
         <p class="text-lg font-bold capitalize">
