@@ -12,7 +12,7 @@
         <StackIcons />
       </div>
     </div>
-    <div class=" hidden sm:visible  avatar-wrapper w-1/2  flex  items-center justify-center">
+    <div class=" hidden sm:visible  avatar-wrapper w-1/2  sm:flex  items-center justify-center">
       <div class=" h-56 w-56  rounded-full  " />
     </div>
   </section>
