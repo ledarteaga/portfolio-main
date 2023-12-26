@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[50vh] w-1/3 m-auto my-20">
+  <div class="h-[50vh] w-1/2 sm:w-1/3 m-auto my-20">
     <h3 class="font-bold text-3xl  leading-loose">
       Contact me
     </h3>
