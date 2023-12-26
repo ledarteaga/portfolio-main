@@ -7,9 +7,5 @@
   "prettier.trailingComma": "all",
   "prettier.singleQuote": true,
   "prettier.vueIndentScriptAndStyle": true,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
-  },
-  }
-
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
