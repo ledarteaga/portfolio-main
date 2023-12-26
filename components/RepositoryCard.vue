@@ -1,6 +1,7 @@
 <template>
   <a :href="repo.html_url" target="_blank">
-    <div class="flex flex-col w-72  h-52 md:h-52 rounded-md bg-gray-800 shadow px-3 py-2">
+    <div
+      class="flex flex-col w-72  h-52 md:h-52 rounded-md bg-gray-800 shadow px-3 py-2 transition-all border-gray-800 border hover:border-green-400">
 
       <div>
         <p class="text-lg font-bold capitalize">
@@ -8,18 +9,14 @@
         </p>
       </div>
       <div class=" flex-grow">
-        <p class="text-base  ">
+        <p class="text-sm   pt-2">
           {{ repo.description }}
         </p>
       </div>
-      <div class="footer flex justify-between">
-        <p class="text-xs font-bold">
-          {{ $dayjs(repo.created_at).format('DD/MM/YYYY') }}
-        </p>
+      <div class="footer flex justify-center">
 
-        <p v-if="repo.name" class="text-xs font-bold">
-          <RepositoryLanguages :repo-name="repo.name" />
-        </p>
+        <RepositoryLanguages :repo-name="repo.name" />
+
       </div>
 
     </div>

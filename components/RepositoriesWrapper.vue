@@ -3,29 +3,27 @@
   <ErrorPlaceholder v-else-if="error" />
   <div v-else>
     <Vue3Marquee :duration="120">
-      <RepositoryCard class=" mx-10" v-for="slide in repos" :key="slide.id" :repo="slide" />
-
+      <RepositoryCard v-for="slide in repos" :key="slide.id" class=" mx-7" :repo="slide" />
     </Vue3Marquee>
   </div>
 </template>
 
 <script lang="ts" setup>
 
-import type { iRepoDetails } from '~/types';
-import LoadingPlaceholder from './LoadingPlaceholder.vue'
+  import LoadingPlaceholder from './LoadingPlaceholder.vue'
+  import type { iRepoDetails } from '~/types';
 
+  const repos = ref<iRepoDetails[]>([])
 
-const repos = ref<iRepoDetails[]>([])
+  const config = useRuntimeConfig();
 
-const config = useRuntimeConfig();
-
-const { pending, error } = useFetch('/users/ledarteaga/repos', {
-  headers: {
-    authorization: 'Bearer ' + config.public.token,
-  },
-  baseURL: config.public.baseURL,
-  onResponse({ request, response, options }) {
-    repos.value = response._data.map((e: any) => e as iRepoDetails)
-  },
-},);
+  const { pending, error } = useFetch('/users/ledarteaga/repos', {
+    headers: {
+      authorization: 'Bearer ' + config.public.token,
+    },
+    baseURL: config.public.baseURL,
+    onResponse({ request, response, options }) {
+      repos.value = response._data.map((e: any) => e as iRepoDetails)
+    },
+  },);
 </script>
